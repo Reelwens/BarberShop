@@ -7,28 +7,66 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Sanchez:400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600" rel="stylesheet">
   <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 </head>
 
 <body>
-  <div class="inner">
-    <h1>$ <span id="barber_money">0</span></h1>
-    <h2>EMPLOYEES</h2>
-    <p>Employees : <span id="nb_employee">0</span></p>
-    <p>price : <span id="price_employee">3</span></p>
-    <button id="btn_employee" type="button">add employe</button>
 
-    <h2>SCISSORS</h2>
-    <p>Scissors : <span id="nb_scissor">0</span></p>
-    <p>price : <span id="price_scissor">100</span></p>
-    <button id="btn_scissor" type="button">add scissors</button>
 
-    <h2>SHOP</h2>
-    <p>Shop : <span id="nb_shop">0</span></p>
-    <p>price : <span id="price_shop">1000</span></p>
-    <button id="btn_shop" type="button">add shop</button>
+  <div class="navbar">
+    <ul>
+      <li><img src="img/logo-transparent.png"></li>
+      <li class="description-barber">The BARBER SHOP Game - Teddy Abernathy</li>
+      <li class="head-font"><a href="#footer">About</a></li>
+      <li class="head-font"><a href="#footer"><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+    </ul>
   </div>
+
+  <div id="gameplay">
+    <div class="inner">
+      <h1>$ <span id="barber_money">0</span></h1>
+      <h2>EMPLOYEES</h2>
+      <p>Employees : <span id="nb_employee">0</span></p>
+      <p>price : <span id="price_employee">3</span></p>
+      <button id="btn_employee" type="button">add employe</button>
+
+      <h2>SCISSORS</h2>
+      <p>Scissors : <span id="nb_scissor">0</span></p>
+      <p>price : <span id="price_scissor">100</span></p>
+      <button id="btn_scissor" type="button">add scissors</button>
+
+      <h2>SHOP</h2>
+      <p>Shop : <span id="nb_shop">0</span></p>
+      <p>price : <span id="price_shop">1000</span></p>
+      <button id="btn_shop" type="button">add shop</button>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="col col-1">
+      <h3>HETIC P2020</h3>
+      <h6>12 Décembre 2016</h6>
+    </div>
+    <div class="col col-2">
+      <h3>Partagez votre score</h3></div>
+    <div class="col col-3">
+      <ul class="icons">
+        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></a></i>
+        </li>
+        <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></a></i>
+        </li>
+        <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></a></i>
+        </li>
+        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></a></i>
+        </li>
+      </ul>
+    </div>
+
+    <div class="copyright">&#169; Copyright Teddy Aberthany
+      <h6>All Rights Reserved</h6></div>
+  </footer>
 
   <script src="js/clients/client.js" charset="utf-8"></script>
   <script src="js/items/employee.js" charset="utf-8"></script>

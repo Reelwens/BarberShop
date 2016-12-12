@@ -1,0 +1,69 @@
+body {
+  background: #FFF;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000;
+}
+
+.navbar {
+  width: 100%;
+  background: #e8e0da;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+.navbar .description-barber {
+  font-size: 22px;
+  margin: auto;
+}
+
+.navbar .head-font {
+  margin-left: 50px;
+  font-size: 16px;
+  color: #989898;
+  left: 500px;
+  position: relative;
+}
+
+.navbar li img {
+  width: 80px;
+  height: auto;
+  margin: 12px 20px;
+  vertical-align: middle;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+#gameplay {
+  width: 100%;
+  height: 703px;
+  background: #e5e5e5;
+  padding: 30px 30px;
+}
+
+footer {
+  background: #e8e0da;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #989898;
+}
