@@ -1,0 +1,55 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, p, img {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+body {
+    line-height:1;
+}
+
+/* apply a natural box layout model to all elements */
+*,*::before,*::after,*:before,*:after {
+    -moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;
+}
+
+/* inputs */
+
+/* inputs appearance (not for every input)  */
+
+/* input color width */
+
+/* IE clear cross */
+
+/* details and summary */
+
+/* text size adjusting */
+body {
+    -webkit-text-size-adjust:100%;
+       -moz-text-size-adjust:100%;
+            text-size-adjust:100%;
+}
+
+/* mark */
+
+/* Font smoothing */
+/**,*::before,*::after,*:before,*:after {
+     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+
+/* hr */
+
+/* u */
+
+/* th */
+
+/* a */
