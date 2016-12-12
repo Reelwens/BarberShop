@@ -4,42 +4,47 @@ var button_emp = document.querySelector( '#btn_employee' ),
   button_sho = document.querySelector( '#btn_shop' );
 
 // All game data
-var gameData = {
+var game_items_data = {
   employee: {
-    price: 15,
+    price: 3,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice + oldPrice * 0.15 );
+      return Math.floor( oldPrice * 1.5 );
     }
   },
   scissor: {
     price: 100,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice + oldPrice * 0.3 );
+      return Math.floor( oldPrice * 1.3 );
     }
   },
   shop: {
     price: 1000,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice + oldPrice * 0.5 );
+      return Math.floor( oldPrice * 1.5 );
     }
   },
 };
 
 /**
  * add a new item
- * @param {String} type [object key in gameData object]
+ * @param {String} type [object key in game_items_data object]
  */
 var addNewItem = function addNewItem( type ) {
-  gameData[ type ].nb = gameData[ type ].nb + 1;
-  gameData[ type ].price = gameData[ type ].newPrice( gameData[ type ].price )
+  if ( money >= game_items_data[ type ].price ) {
+    money = money - game_items_data[ type ].price;
+    game_items_data[ type ].nb += 1;
+    game_items_data[ type ].price = game_items_data[ type ].newPrice( game_items_data[ type ].price )
 
-  document.querySelector( '#nb_' + type )
-    .innerHTML = gameData[ type ].nb;
-  document.querySelector( '#price_' + type )
-    .innerHTML = gameData[ type ].price;
+    document.querySelector( '#nb_' + type )
+      .innerHTML = game_items_data[ type ].nb;
+    document.querySelector( '#price_' + type )
+      .innerHTML = game_items_data[ type ].price;
+    document.querySelector( '#barber_money' )
+      .innerHTML = money;
+  }
 
 };
 
