@@ -25,7 +25,7 @@ Le principe de base est de couper la barbe de chacun des clients faisant la queu
 Info : Avant de commencer la partie, le joueur sera sur un écran menu disposant d'un input "Votre Pseudo", d'un bouton "Jouer", et d'un bouton "Scores". Son pseudo sera ainsi enregistré dans la base de donnée. Une fois avoir cliqué sur "Jouer", une fenêtre affiche la citation ci-dessus par défilement narratif. Le joueur peut décider de la passer d'un simple double clic (un clic terminant le défilement automatique).
 
 #### Variables d'achat
-** Niveau de la boutique **
+**Niveau de la boutique**
 
 La boutique permet au joueur de progresser, car elle lui permet de d'acheter davantage d'employés, et de monter en gamme. Les clients deviennent alors bien plus longs à satisfaire. Chaque amélioration de la boutique est visible graphiquement.
 
@@ -35,7 +35,7 @@ La boutique permet au joueur de progresser, car elle lui permet de d'acheter dav
 | Niveau 2      | centered      | 100            | 130 à 360       | $15 à $45       |
 | Niveau X      | are neat      | x10            | x13             | x15             |
 
-** Employés **
+**Employés**
 
 Les employés sont les achats les plus rentables. Chaque employé va réaliser l'équivalent d'un clic par seconde. Selon l'évolution de l'amélioration de la production, chaque employé va alors devenir bien plus efficace.
 
@@ -45,7 +45,7 @@ Les employés sont les achats les plus rentables. Chaque employé va réaliser l
 | 2      | $23  |
 | 3      | x1,5 |
 
-** Amélioration de la production **
+**Amélioration de la production**
 
 Les améliorations permettent de créer et d'agrandir le coefficient multiplicateur de production de chaque employé.
 Note : Chacun des prix de ces améliorations est à multiplier par *1,3* pour chaque montée en niveau.
@@ -58,7 +58,7 @@ Note : Chacun des prix de ces améliorations est à multiplier par *1,3* pour ch
 | Niveau de formation des employés       | x47                                  | $10 100          |
 | Niveau des primes                      | x260                                 | $110 000         |
 
-** Achats de campagne de communication **
+**Achats de campagne de communication**
 
 Les campagnes de communication permettent de faire venir du monde dans la queue. Par défaut, il y a un client chaque 2 secondes. Cependant en gagnant en rapidité, les clients vont venir à manquer. Le joueur devra alors attirer de nouveaux clients.
 
