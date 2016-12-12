@@ -24,7 +24,7 @@ Le principe de base est de couper la barbe de chacun des clients faisant la queu
 
 Info : Avant de commencer la partie, le joueur sera sur un écran menu disposant d'un input "Votre Pseudo", d'un bouton "Jouer", et d'un bouton "Scores". Son pseudo sera ainsi enregistré dans la base de donnée. Une fois avoir cliqué sur "Jouer", une fenêtre affiche la citation ci-dessus par défilement narratif. Le joueur peut décider de la passer d'un simple double clic (un clic terminant le défilement automatique).
 
-#### Variables d'achat
+### Variables d'achat
 **Niveau de la boutique**
 
 La boutique permet au joueur de progresser, car elle lui permet de d'acheter davantage d'employés, et de monter en gamme. Les clients deviennent alors bien plus longs à satisfaire. Chaque amélioration de la boutique est visible graphiquement.
@@ -51,7 +51,7 @@ Les améliorations permettent de créer et d'agrandir le coefficient multiplicat
 Note : Chacun des prix de ces améliorations est à multiplier par *1,3* pour chaque montée en niveau.
 
 | Nom                                    | Multiplicateur (pour chaque employé) | Prix au niveau 1 |
-| -------------------------------------- |:------------------------------------:| --------------- :|
+| -------------------------------------- |:------------------------------------:| ----------------:|
 | Niveau de qualité du matériel          | x1,1                                 | $12              |
 | Niveau de qualité de l'ambiance sonore | x3                                   | $100             |
 | Niveau de beauté de la décoration      | x8                                   | $1100            |
@@ -70,7 +70,7 @@ Lorsque le joueur va augmenter le niveau de sa boutique, le prix de la coupe va 
 | Article de journal      | 1                     | $50                      |
 | Affiche publicitaire    | A voir                | ?                        |
 
-#### Saisons
+### Saisons
 
 Tous les 3 minutes, les saisons se succèdent, laissant ainsi certains avantages et inconvéniants au joueur. Par exemple l'été, la barbe pousse plus vite. Chaque client demande alors davantage de temps, et la queue est plus longue.
 
@@ -79,12 +79,12 @@ Eté : Nombre de clics par client nécessaire en augmentation de 30%. Nombre de 
 Automne : Normal
 Hiver : Eté : Nombre de clics par client nécessaire en diminution de 30%. Nombre de client par seconde en diminution de 30%.
 
-#### Messages cycliques
+### Messages cycliques
 
 Des messages cycliques apparaitront dans la fenêtre de jeu pour ajouter une intéraction avec le joueur. Voici la liste des messages qui s'afficheront durant le jeu :
 “News: Une nouvelle barberie vient d’ouvrir à Montreuil. A ce que l’on dit, son propriétaire Teddy Lowe regorge de motivation.”
 
-#### Evenements
+### Evenements
 
 Aléatoirement entre 5 et 15 minutes, un événement aléatoire survient. Indiqué à travers la fenêtre de news, mis davantage en valeur que les messages classiques.
 
