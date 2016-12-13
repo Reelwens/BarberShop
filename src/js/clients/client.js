@@ -1,5 +1,3 @@
-'use strict'
-
 // generate random color
 var bits = function bits() {
   return Math.floor( Math.random() * 255 );
