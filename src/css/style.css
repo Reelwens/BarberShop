@@ -69,10 +69,10 @@ footer a {
 }
 
 
-/**** 
+/****
 
 
-Accueil 
+Accueil
 
 
 *****/
@@ -86,6 +86,10 @@ body {
 .main {
   background-color: skyblue;
   height: 100%;
+}
+
+.customer {
+  height: 200px;
 }
 
 .content-gameplay {
