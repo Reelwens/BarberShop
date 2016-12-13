@@ -5,7 +5,7 @@ var gulp = require( 'gulp' ),
   minify = require( 'gulp-minify' );
 
 gulp.task( 'javascript', function () {
-  return gulp.src( [ './src/js/clients/*.js', './src/js/items/*.js', './src/js/barber/*.js', './src/js/*.js' ] )
+  return gulp.src( [ './src/js/clients/*.js', './src/js/items/*.js', './src/js/barber/*.js','./src/js/canvas/*.js', './src/js/*.js' ] )
     .pipe( sourcemaps.init() )
     .pipe( concat( 'js/src.js' ) )
     .pipe( sourcemaps.write() )
