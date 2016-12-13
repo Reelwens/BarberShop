@@ -1,4 +1,4 @@
-# Barber Shop
+# Barber Shop :fa-male: :fa-home:
 Projet web réalisé dans le cadre de HETIC.
 
 ## Sujet demandé
@@ -16,6 +16,7 @@ Les contraintes :
 
 ## Principe de notre jeu
 Nous incarnons un barbier du nom de Teddy Lowe. Celui-ci vient d'ouvrir sa boutique et nous devons l'aider à prospérer. Notre but est de disposer de la plus grande boutique de barberie possible. Pour cela, nous devons évoluer dans le jeu en nous reposant sur divers points.
+
 Le principe de base est de couper la barbe de chacun des clients faisant la queue. Plusieurs clics sont nécessaires pour chaque client. Chaque fois qu'un client sort de la boutique, nous gagnons de l'argent.
 
 > *Voici Teddy Lowe. Depuis sa tendre enfance, Teddy ne rêve que d’une chose : Devenir le plus grand barbier du monde.
@@ -32,8 +33,8 @@ La boutique permet au joueur de progresser, car elle lui permet de d'acheter dav
 | Niveau        | Prix          | Employés max.  | Clic par client | Gain par client |
 | ------------- |:-------------:|:--------------:|:---------------:| ---------------:|
 | Niveau 1      | (défaut)      | 10             | 10 à 30         | $1 à $3         |
-| Niveau 2      | centered      | 100            | 130 à 360       | $15 à $45       |
-| Niveau X      | are neat      | x10            | x13             | x15             |
+| Niveau 2      | $1000      | 100            | 130 à 360       | $15 à $45       |
+| Niveau X      | x10      | x10            | x13             | x15             |
 
 **Employés**
 
@@ -74,15 +75,16 @@ Lorsque le joueur va augmenter le niveau de sa boutique, le prix de la coupe va 
 
 Tous les 3 minutes, les saisons se succèdent, laissant ainsi certains avantages et inconvéniants au joueur. Par exemple l'été, la barbe pousse plus vite. Chaque client demande alors davantage de temps, et la queue est plus longue.
 
-Printemps : Normal
-Eté : Nombre de clics par client nécessaire en augmentation de 30%. Nombre de client par seconde en augmentation de 30%.
-Automne : Normal
-Hiver : Eté : Nombre de clics par client nécessaire en diminution de 30%. Nombre de client par seconde en diminution de 30%.
+**Printemps :** Normal
+**Eté :** Nombre de clics par client nécessaire en augmentation de 30%. Nombre de client par seconde en augmentation de 30%.
+**Automne :** Normal
+**Hiver :** Nombre de clics par client nécessaire en diminution de 30%. Nombre de client par seconde en diminution de 30%.
 
 ### Messages cycliques
 
 Des messages cycliques apparaitront dans la fenêtre de jeu pour ajouter une intéraction avec le joueur. Voici la liste des messages qui s'afficheront durant le jeu :
-“News: Une nouvelle barberie vient d’ouvrir à Montreuil. A ce que l’on dit, son propriétaire Teddy Lowe regorge de motivation.”
+
+* “News: Une nouvelle barberie vient d’ouvrir à Montreuil. A ce que l’on dit, son propriétaire Teddy Lowe regorge de motivation.”
 
 ### Evenements
 
@@ -94,9 +96,11 @@ Aléatoirement entre 5 et 15 minutes, un événement aléatoire survient. Indiqu
 
 ## Réalisation
 Projet réalisé par :
-* de la Fouchardière Antoine
-* Franco Lucille
+* de la Fouchardière Antoine - @antoinedlf
+* Franco Lucille - @lucillef
 * Garcia Clarisse
-* Habib Duke
-* Lucas Simon
-* Maire Paul
+* Habib Duke - @DukeH
+* Lucas Simon - @Reelwens
+* Maire Paul - @Paul-maire
+
+![Barber Shop logo](http://image.noelshack.com/fichiers/2016/50/1481621419-logo-transparent-copie.png)
