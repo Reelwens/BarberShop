@@ -35,8 +35,8 @@ La boutique permet au joueur de progresser, car elle lui permet de d'**acheter d
 | Niveau        | Prix          | Employés max.  | Clic par client | Gain par client |
 | ------------- |:-------------:|:--------------:|:---------------:| ---------------:|
 | Niveau 1      | (défaut)      | 10             | 10 à 30         | $1 à $3         |
-| Niveau 2      | $1000      | 100            | 130 à 360       | $15 à $45       |
-| Niveau X      | x10      | x10            | x13             | x15             |
+| Niveau 2      | $1000         | 100            | 130 à 360       | $15 à $45       |
+| Niveau X      | x10           | x10            | x13             | x15             |
 
 **Employés**
 
@@ -51,6 +51,7 @@ Les employés sont les achats **les plus rentables**. Chaque employé va réalis
 **Amélioration de la production**
 
 Les améliorations permettent de créer et d'**agrandir le coefficient multiplicateur de production de chaque employé**.
+
 **Note :** Chacun des prix de ces améliorations est à multiplier par **1,3** pour chaque montée en niveau.
 
 | Nom                                    | Multiplicateur (pour chaque employé) | Prix au niveau 1 |
@@ -67,11 +68,11 @@ Les campagnes de communication permettent de **faire venir du monde dans la queu
 
 Lorsque le joueur va **augmenter le niveau de sa boutique**, le prix de la coupe va augmenter. Ainsi, **les clients à toucher seront différents**. Les anciennes campagnes seront alors obsolètes et le joueur possédera de **nouveaux moyens de communication**, plus ciblés.
 
-| Type de communication   | Personnes par seconde | Prix | Niveau correspondant |
-| ----------------------- |:---------------------:| ------------------------ |:-|
-| Rien (défaut)           | 0.5                   | $0                       | Niveau 1 |
-| Article de journal      | 1                     | $50                      | Niveau 1 |
-| Affiche publicitaire    | A voir                | ?                        | Niveau 1 |
+| Type de communication   | Personnes par seconde | Prix                     | Niveau correspondant |
+| ----------------------- |:---------------------:| ------------------------ |:-------------------- |
+| Rien (défaut)           | 0.5                   | $0                       | Niveau 1             |
+| Article de journal      | 1                     | $50                      | Niveau 1             |
+| Affiche publicitaire    | A voir                | ?                        | Niveau 1             |
 
 ### Saisons
 
