@@ -48,12 +48,6 @@ body {
   color: #000;
 }
 
-#gameplay {
-  width: 100%;
-  height: 703px;
-  background: #e5e5e5;
-  padding: 30px 30px;
-}
 
 footer {
   background: #e8e0da;
@@ -76,61 +70,128 @@ Accueil
 
 
 *****/
-
-html,
-body {
-  margin: 0;
-  height: 100%;
-}
-
-.main {
-  background-color: skyblue;
-  height: 100%;
-}
-
-.customer {
-  height: 200px;
+.main{
+    overflow: hidden;
 }
 
 .content-gameplay {
-  position: relative;
-  height: 100%;
+    background-color: skyblue;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.content-gameplay .content-barbershop .customers-exit {
-  position: absolute;
-  left: 25px;
-  bottom: 45px;
-  transform: scaleX(-1);
+.container-left{
+    width: 75%;
+    height: 90%;
 }
 
-.content-gameplay .content-barbershop .customers-exit img {
-  height: 175px;
+.points-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 15%;
 }
 
-.content-gameplay .content-barbershop .shop {
-  position: absolute;
-  left: 80px;
-  bottom: 50px;
-  width: 475px;
+
+.points-container .counter{
+    width: 30%;
+    margin: 0 auto;
+    background-color:rgba(0,0,0,0.5);
+    text-align: center;
+    color: white;
+    padding-top: 1%;
 }
 
-.content-gameplay .content-barbershop .customers-enter {
-  position: absolute;
-  left: 520px;
-  bottom: 45px;
-  transform: scaleX(-1);
+.points-container .counter h1{
+    font-family: "Sanchez", serif;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 5%;
+
 }
 
-.content-gameplay .content-barbershop .customers-enter img {
-  margin-right: 50px;
-  height: 175px;
+.points-container .counter h2{
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-size: 20px;
+
 }
 
-.floor {
-  background-color: #2b2b2b;
-  position: absolute;
-  height: 50px;
-  width: 100%;
-  bottom: 0;
+.content-gameplay .content-barbershop{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 86%;
+}
+
+.content-barbershop .customer {
+    height: 155px;
+    transform: scaleX(-1);
+}
+
+.content-barbershop .customers-enter{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.content-barbershop .shop-container{
+     display: flex;
+     flex-direction: column-reverse;
+     flex-wrap: wrap;
+ }
+
+.content-barbershop .shop{
+    width: 425px;
+}
+
+.content-barbershop .container-floor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.content-barbershop .little-floor{
+    width: 29%;
+    background-color: black;
+    height: 50px;
+}
+
+.content-barbershop .floor{
+    width: 87%;
+    background-color: black;
+    height: 50px;
+}
+
+
+
+.container-right{
+    width: 25%;
+    height: 90%;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.container-right .upgrade-container{
+    background-color:rgba(225,225,225,0.8);
+    width: 100%;
+    height: 10%;
+    margin-bottom: 1%;
+    padding: 1% 1%;
+}
+
+.container-right #gameplay {
+    width: 100%;
+    height: 100%;
+    padding: 1% 1%;
+}
+
+.ground-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10%;
+    align-items: flex-end;
+    background-color: #2b2b2b;
 }
