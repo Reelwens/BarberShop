@@ -4,6 +4,7 @@ var gulp = require( 'gulp' ),
   concat_css = require( 'gulp-concat-css' ),
   minify = require( 'gulp-minify' ),
   shell = require( 'gulp-shell' ),
+  imagemin = require( 'gulp-imagemin' ),
   cleanCSS = require( 'gulp-clean-css' );
 
 gulp.task( 'javascript', function () {
@@ -35,6 +36,12 @@ gulp.task( 'minify-css', function () {
       console.log( details.name + ': ' + details.stats.minifiedSize );
     } ) )
     .pipe( gulp.dest( 'dist/css/' ) );
+} );
+
+gulp.task( 'compress:img', function () {
+  return gulp.src( [ 'src/img/*.svg', 'src/img/*.png' ] )
+    .pipe( imagemin() )
+    .pipe( gulp.dest( 'dist/img' ) )
 } );
 
 gulp.task( 'build', function () {

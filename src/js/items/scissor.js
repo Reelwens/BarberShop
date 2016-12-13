@@ -1,3 +1,0 @@
-var Scissor = function () {
-  // body...
-};
