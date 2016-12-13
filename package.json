@@ -4,7 +4,7 @@
   "description": "projet semaine intensive hetic H2",
   "main": "index.js",
   "scripts": {
-    "build": "gulp css && gulp javascript && gulp compress:js"
+    "build": "gulp css && gulp javascript && gulp compress:js && gulp minify-css"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,11 @@
   "homepage": "https://github.com/Reelwens/H2T1-Team8#readme",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.2.2",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^2.3.0",
     "gulp-minify": "0.0.14",
+    "gulp-shell": "^0.5.2",
     "gulp-sourcemaps": "^1.9.1"
   }
 }
