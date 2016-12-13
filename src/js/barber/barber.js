@@ -1,17 +1,23 @@
 var game_panel = document.querySelector( '.inner' ),
   barber_money = document.querySelector( '#barber_money' ),
-  money = 0;
+  gain = document.querySelector( '.gain' );
 
 game_panel.addEventListener( 'click', function ( e ) {
   e.preventDefault();
-  if ( queue[ 0 ].click <= 0 ) {
-    queue.shift();
-    money += 3
-    barber_money.innerHTML = money;
-    document.querySelector( '.customers-enter' )
-      .removeChild( document.querySelector( '.customers-enter' )
-        .childNodes[ 3 ] )
+  if ( queue[ 0 ] ) {
+    if ( queue[ 0 ].click <= 0 ) {
+      queue.shift();
+      config.barber_money += config.cut_value;
+      barber_money.innerHTML = config.barber_money;
+      document.querySelector( '.customers-enter' )
+        .removeChild( document.querySelector( '.customers-enter' )
+          .childNodes[ document.querySelector( '.customers-enter' )
+            .childNodes.length - 1 ] )
+      gain.innerHTML = config.cut_value;
+      return;
+    }
+    queue[ 0 ].click -= config.click_value;
+
   }
 
-  queue[ 0 ].click -= 1;
 } );;
