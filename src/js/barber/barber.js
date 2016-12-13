@@ -8,9 +8,10 @@ game_panel.addEventListener( 'click', function ( e ) {
     queue.shift();
     money += 3
     barber_money.innerHTML = money;
+    document.querySelector( '.customers-enter' )
+      .removeChild( document.querySelector( '.customers-enter' )
+        .childNodes[ 3 ] )
   }
-  queue[ 0 ].click -= 1;
-  console.log( queue[ 0 ].click );
-} );
 
-console.log( queue );
+  queue[ 0 ].click -= 1;
+} );;

@@ -1,0 +1,26 @@
+{
+  "name": "barber_shop",
+  "version": "1.0.0",
+  "description": "projet semaine intensive hetic H2",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp css && gulp javascript && gulp compress:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reelwens/H2T1-Team8.git"
+  },
+  "author": "Paul Maire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reelwens/H2T1-Team8/issues"
+  },
+  "homepage": "https://github.com/Reelwens/H2T1-Team8#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-minify": "0.0.14",
+    "gulp-sourcemaps": "^1.9.1"
+  }
+}
