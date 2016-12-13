@@ -1,7 +1,8 @@
 // Add Button
 var button_emp = document.querySelector( '#btn_employee' ),
   button_sci = document.querySelector( '#btn_scissor' ),
-  button_sho = document.querySelector( '#btn_shop' );
+  button_sho = document.querySelector( '#btn_shop' ),
+  inner = document.querySelector( '.inner' );
 
 // All game data
 var game_items_data = {
@@ -52,6 +53,11 @@ var addNewItem = function addNewItem( type ) {
 button_emp.addEventListener( 'click', function ( e ) {
   e.preventDefault();
   addNewItem( 'employee' );
+  setInterval( function () {
+    inner.click();
+    console.log( 'click !' )
+  }, 1000 / game_items_data[ 'employee' ].nb )
+
 } );
 
 button_sci.addEventListener( 'click', function ( e ) {

@@ -11,15 +11,16 @@
 //   size = 2,
 //   speed = 10,
 //   lights = new Array,
-//   colors = ['#eee'];
+//   colors = [ '#eee' ];
 //
-// canvas.setAttribute('width', w);
-// canvas.setAttribute('height', h);
+// canvas.setAttribute( 'width', w );
+// canvas.setAttribute( 'height', h );
 //
 // function init() {
 //   time = 0;
 //   count = 0;
 //
+
 //   for (var i = 0; i < arc; i++) {
 //     lights[i] = {
 //       x: Math.ceil(Math.random() * w),
