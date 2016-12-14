@@ -1,3 +1,12 @@
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /* CONTAINERS */
 
 .main {
@@ -9,11 +18,13 @@
 .content-gameplay {
   height: 100vh;
   width: 100vw;
-  padding-left: 1rem;
+  padding: 1rem 0 0 1rem;
   display: flex;
   justify-content: space-between;
-  background-color: skyblue;
   border-bottom: 1rem solid #333;
+  background-image: url('./dist/img/hiver-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* END CONTAINERS */
@@ -21,6 +32,7 @@
 /* CONTAINER LEFT */
 
 .container-left {
+  margin-bottom: -2px;
   display: flex;
   flex-direction: column;
   flex-grow: 2;
@@ -36,7 +48,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #e3a947;
 }
 
 .points-container {
@@ -60,7 +72,18 @@
   flex-direction: row;
 }
 
+.customers-exit {
+  width: 9.2rem;
+  min-width: 9.2rem;
+}
+
 .customer {
+  height: 12.5rem;
+  margin: 0 0.5rem;
+  transform: scaleX(-1);
+}
+
+.customer-out {
   height: 12.5rem;
   margin: 0 0.5rem;
   transform: scaleX(-1);
@@ -86,6 +109,7 @@
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 
 .inner{
     display: flex;

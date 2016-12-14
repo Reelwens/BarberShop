@@ -2,7 +2,7 @@
 var button_emp = document.querySelector( '#btn_employee' ),
   button_sci = document.querySelector( '#btn_scissor' ),
   button_sho = document.querySelector( '#btn_shop' ),
-  inner = document.querySelector( '.inner' );
+  inner = document.querySelector( '.content-gameplay' );
 
 /**
  * add a new item
