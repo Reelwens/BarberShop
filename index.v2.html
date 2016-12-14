@@ -3,66 +3,25 @@
 
 <head lang="en">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta name="viewport" content="user-scalable=no">
   <title>Barber shop</title>
+  <link rel="icon" href="./dist/img/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Sanchez:400,400i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./dist/css/bundle.css">
-  <link rel="icon" href="./dist/img/favicon.png">
+  <link rel="stylesheet" href="./new_style.css">
+  <link rel="stylesheet" href="./src/css/reset.css">
 </head>
 
 <body>
 
-  <!-- <div class="navbar"> -->
-  <!--<ul>-->
-  <!--<li><img src="src/img/logo-transparent.png"></li>-->
-  <!--<li class="description-barber">The BARBER SHOP Game - Teddy Abernathy</li>-->
-  <!--<li class="head-font"><a href="#footer">About</a></li>-->
-  <!--<li class="head-font"><a href="#footer"><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>-->
-  <!--</ul>-->
-  <!--</div>-->
-
-
-  <!-- <div class="main">
-    <div class="content-gameplay">
-      <div class="content-barbershop">
-        <div class="customers-exit"> -->
-  <!-- Customers after  -->
-  <!-- </div>
-        <img src="./dist/img/barbershop.svg" alt="Barbershop" class="shop" />
-        <div class="customers-enter"> -->
-  <!-- Customers before -->
-  <!-- </div>
-        <div class="floor"></div> -->
-  <!----  <canvas id="snowing">
-                Sorry, your browser does not support canvas.
-              </canvas> !----->
-  <!-- </div>
-    </div> -->
-
-
-
-  <!-- </div>
-
-  <div id="gameplay">
-    <div class="inner">
-      <h1>$ <span id="barber_money">0</span></h1>
-      <h2>EMPLOYEES</h2>
-      <p>Employees : <span id="nb_employee">0</span></p>
-      <p>price : <span id="price_employee">3</span></p>
-      <button id="btn_employee" type="button">add employe</button>
-
-      <h2>SCISSORS</h2>
-      <p>Scissors : <span id="nb_scissor">0</span></p>
-      <p>price : <span id="price_scissor">100</span></p>
-      <button id="btn_scissor" type="button">add scissors</button>
-
-      <h2>SHOP</h2>
-      <p>Shop : <span id="nb_shop">0</span></p>
-      <p>price : <span id="price_shop">1000</span></p>
-      <button id="btn_shop" type="button">add shop</button>
-    </div>
+  <!-- <div class="navbar">
+  <ul>
+  <li><img src="src/img/logo-transparent.png"></li>
+  <li class="description-barber">The BARBER SHOP Game - Teddy Abernathy</li>
+  <li class="head-font"><a href="#footer">About</a></li>
+  <li class="head-font"><a href="#footer"><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+  </ul>
   </div> -->
 
   <div class="main">
@@ -81,74 +40,73 @@
           <div class="shop-container">
             <img src="./dist/img/barbershop.svg" alt="Barbershop" class="shop" />
             <div class="container-floor">
-              <!--<div class="little-floor"></div>-->
-              <!--<div class="little-floor"></div>-->
-              <!--<div class="little-floor"></div>-->
-              <!-- <div class="floor"></div> -->
+              <!-- <div class="little-floor"></div>
+              <div class="little-floor"></div>
+              <div class="little-floor"></div>
+              <div class="floor"></div> -->
             </div>
-
+            <!--  <canvas id="snowing"> Sorry, your browser does not support canvas. </canvas> ! -->
           </div>
           <div class="customers-enter">
-            <!-- <img src="./dist/img/customer1.svg" alt="Customer" class="customer" />
-            <img src="./dist/img/customer1.svg" alt="Customer" class="customer" />
-P            <img src="./dist/img/customer1.svg" alt="Customer" class="customer" />
-            <img src="./dist/img/customer1.svg" alt="Customer" class="customer" /> -->
+            <!-- svg customers -->
           </div>
         </div>
       </div>
+      <!-- UPGRADES  -->
       <div class="container-right">
         <div id="gameplay">
           <div class="inner">
+            <h2 class="upgrade-title">MAGASIN</h2>
             <div class="upgrade-container" id="btn_shop">
-              <h2>MAGASIN</h2>
               <p>Magasin : <span id="nb_shop">0</span></p>
               <p>prix : <span id="price_shop">1000</span></p>
               <p class="action">Agrandir la boutique</p>
             </div>
 
+            <h2 class="upgrade-title">EMPLOYEES</h2>
             <div class="upgrade-container" id="btn_employee">
-              <h2>EMPLOYEES</h2>
               <p>Employees : <span id="nb_employee">0</span></p>
               <p>prix : <span id="price_employee">3</span></p>
               <p class="action">Embaucher un employé</p>
             </div>
 
+            <h2 class="upgrade-title">COMMUNICATION</h2>
             <div class="upgrade-container" id="btn_com">
-              <h2>COMMUNICATION</h2>
               <p>Niveau de communication : <span id="nb_com">0</span></p>
               <p>prix : <span id="price_com">100</span></p>
               <p class="action">Publication dans un journal</p>
             </div>
 
+            <h2 class="upgrade-title">MATERIELS</h2>
             <div class="upgrade-container" id="btn_scissor">
-              <h2>MATERIELS</h2>
               <p>Niveau du matériel : <span id="nb_scissor">0</span></p>
               <p>prix : <span id="price_scissor">100</span></p>
               <p class="action">Acheter du nouveau matériel</p>
             </div>
 
+            <h2 class="upgrade-title">MUSIQUE</h2>
             <div class="upgrade-container" id="btn_music">
-              <h2>MUSIQUE</h2>
               <p>Niveau de la musique : <span id="nb_music">0</span></p>
               <p>prix : <span id="price_music">100</span></p>
               <p class="action">Acheter une nouvelle playlist</p>
             </div>
 
+            <h2 class="upgrade-title">RENNOVATION</h2>
             <div class="upgrade-container" id="btn_renovation">
-              <h2>RENNOVATION</h2>
               <p>Niveau de la boutique : <span id="nb_renovation">0</span></p>
               <p>prix : <span id="price_renovation">100</span></p>
               <p class="action">Rénové la boutique</p>
             </div>
+
+            <h2 class="upgrade-title">FORMATION</h2>
             <div class="upgrade-container" id="btn_formation">
-              <h2>FORMATION</h2>
               <p>Niveau des formations : <span id="nb_formation">0</span></p>
               <p>prix : <span id="price_formation">100</span></p>
               <p class="action">Former ses employés</p>
             </div>
 
+            <h2 class="upgrade-title">PRIMES</h2>
             <div class="upgrade-container" id="btn_bonus">
-              <h2>PRIMES</h2>
               <p>Niveau des primes : <span id="nb_bonus">0</span></p>
               <p>prix : <span id="price_bonus">100</span></p>
               <p class="action">Offrir une prime</p>
@@ -156,36 +114,39 @@ P            <img src="./dist/img/customer1.svg" alt="Customer" class="customer"
           </div>
         </div>
       </div>
-      <div class="ground-container"></div>
+      <!-- <div class="ground-container"></div> -->
+      <!-- END UPGRADES  -->
     </div>
   </div>
 
-  <!--<footer class="footer">-->
-  <!--<div class="col col-1">-->
-  <!--<h3>HETIC P2020</h3>-->
-  <!--<h6>12 Décembre 2016</h6>-->
-  <!--</div>-->
-  <!--<div class="col col-2">-->
-  <!--<h3>Partagez votre score</h3></div>-->
-  <!--<div class="col col-3">-->
-  <!--<ul class="icons">-->
-  <!--<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></a></i>-->
-  <!--</li>-->
-  <!--<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></a></i>-->
-  <!--</li>-->
-  <!--<li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></a></i>-->
-  <!--</li>-->
-  <!--<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></a></i>-->
-  <!--</li>-->
-  <!--</ul>-->
-  <!--</div>-->
+  <!-- <footer class="footer">
+    <div class="col col-1">
+      <h3>HETIC P2020</h3>
+      <h6>12 Décembre 2016</h6>
+    </div>
+    <div class="col col-2">
+      <h3>Partagez votre score</h3></div>
+    <div class="col col-3">
+      <ul class="icons">
+        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></a></i>
+        </li>
+        <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></a></i>
+        </li>
+        <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></a></i>
+        </li>
+        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></a></i>
+        </li>
+      </ul>
+    </div>
 
-  <!--<div class="copyright">&#169; Copyright Teddy Aberthany-->
-  <!--<h6>All Rights Reserved</h6></div>-->
-  <!--</footer>-->
+    <div class="copyright">&#169; Copyright Teddy Aberthany
+      <h6>All Rights Reserved</h6></div>
+  </footer> -->
 
+  <!-- SCRIPT -->
   <script src="./node_modules/moment/moment.js" charset="utf-8"></script>
   <script src="dist/js/src-min.js" charset="utf-8"></script>
+  <!-- END SCRIPT -->
 </body>
 
 </html>

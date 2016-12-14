@@ -1,0 +1,103 @@
+/* CONTAINERS */
+
+.main {
+  background: #FFF;
+  font-family: "Sanchez", "Arial", sans-serif;
+  color: #333;
+}
+
+.content-gameplay {
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem 0 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: skyblue;
+  border-bottom: 1rem solid #333;
+}
+
+/* END CONTAINERS */
+
+/* CONTAINER LEFT */
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.counter {
+  width: 25rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e3a947;
+}
+
+.points-container {
+  font-size: 2.5rem;
+  margin: 0 auto;
+}
+
+.second-title {
+  font-size: 1rem;
+}
+
+.content-barbershop {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.customers-enter {
+  display: flex;
+  flex-direction: row;
+}
+
+.customer {
+  height: 12.5rem;
+  margin: 0 0.5rem;
+  transform: scaleX(-1);
+}
+
+.shop {
+  height: 20.3rem;
+}
+
+/* END CONTAINER LEFT */
+
+/* CONTAINER RIGHT */
+
+.container-right {
+  width: 20rem;
+  min-width: 20rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.upgrade-title {
+  margin: 0.4rem 0;
+  font-family:monospace;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.upgrade-container {
+  width: 100%;
+  padding: 1.3rem;
+  background-color: #e3a947;
+}
+
+/* END CONTAINER RIGHT */
