@@ -113,7 +113,7 @@
                     <div class="upgrade-container" id="btn_renovation">
                         <img src="./dist/img/brick.svg" alt="" />
                         <div class="text">
-                            <p class="action">Rénové la boutique</p>
+                            <p class="action">Rénover la boutique</p>
                             <p class="money"><span id="price_renovation" class="price"><img src="./src/img/money.svg" alt="money icon" class="money-icon"/>100</span></p>
                         </div>
                         <p><span id="nb_renovation">0</span></p>
@@ -170,6 +170,13 @@
   <div class="copyright">&#169; Copyright Teddy Aberthany
     <h6>All Rights Reserved</h6></div>
 </footer> -->
+
+<!-- AMBIANCE SOUND -->
+<audio id="sound" autoplay loop>
+    <source src="src/sound/audio.mp3" type="audio/mp3" />
+    <source src="src/sound/audio.ogg" type="audio/ogg" />
+</audio>
+<script>document.querySelector('#sound').volume=0.15;</script>
 
 <!-- SCRIPT -->
 <script src="./node_modules/moment/moment.js" charset="utf-8"></script>
