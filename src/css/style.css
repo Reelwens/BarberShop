@@ -69,6 +69,17 @@ body {
   align-items: flex-end;
 }
 
+.barbershop{
+    position: relative;
+}
+.barbershop .barber{
+    width: 12rem;
+    position: absolute;
+    top: 90px;
+    left: 68px;
+    z-index: 0;
+}
+
 .customers-enter {
   display: flex;
   flex-direction: row;
