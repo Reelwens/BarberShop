@@ -138,6 +138,12 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    box-shadow: 0.1rem 0.1rem #bfafa3,0.016rem 0.016rem #bfafa3, 0.12rem 0.12rem #bfafa3, 0.19rem 0.19rem #bfafa3, 0.25rem 0.25rem #bfafa3;
+}
+
+.upgrade-container:active{
+    box-shadow: 0.016rem 0.016rem #bfafa3, 0.12rem 0.12rem #bfafa3;
+    transform: translateY(5px);
 }
 
 .upgrade-container .text{
@@ -160,3 +166,19 @@ body {
     align-items: center;
 }
 /* END CONTAINER RIGHT */
+
+/************************
+      Media queries
+************************/
+
+@media screen and (min-width: 100px) and (max-width: 1100px) {
+    .container-right {
+        width: 0;
+        min-width: 0;
+        transition: 0.3s ease-in-out;
+    }
+    .upgrade-container {
+        transition: 0.5s ease-in-out;
+        overflow: hidden;
+    }
+}
