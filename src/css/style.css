@@ -138,6 +138,12 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    box-shadow: 0.1rem 0.1rem #bfafa3,0.016rem 0.016rem #bfafa3, 0.12rem 0.12rem #bfafa3, 0.19rem 0.19rem #bfafa3, 0.25rem 0.25rem #bfafa3;
+}
+
+.upgrade-container:active{
+    box-shadow: 0.016rem 0.016rem #bfafa3, 0.12rem 0.12rem #bfafa3;
+    transform: translateY(5px);
 }
 
 .upgrade-container .text{
