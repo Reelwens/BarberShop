@@ -1,6 +1,5 @@
 var game_panel = document.querySelector( '.content-gameplay' ),
-  barber_money = document.querySelector( '#barber_money' ),
-  gain = document.querySelector( '.gain' );
+  barber_money = document.querySelector( '#barber_money' );
 
 game_panel.addEventListener( 'click', function ( e ) {
   e.preventDefault();
@@ -8,7 +7,7 @@ game_panel.addEventListener( 'click', function ( e ) {
     if ( queue[ 0 ].click <= 0 ) {
       queue.shift();
       config.barber_money += config.cut_value;
-      barber_money.innerHTML = config.barber_money;
+      barber_money.innerHTML = config.barber_money + ' $';
 
       // Show customer after the cut
       document.querySelector( '.customers-exit' )
@@ -18,13 +17,12 @@ game_panel.addEventListener( 'click', function ( e ) {
       document.querySelector( '.customers-enter' )
         .removeChild( document.querySelector( '.customers-enter' )
           .childNodes[ document.querySelector( '.customers-enter' )
-            .childNodes.length - 1 ] )
+            .childNodes.length - 1 ] );
 
-      gain.innerHTML = config.cut_value;
       return;
     }
     queue[ 0 ].click -= config.click_value;
 
   }
 
-} );;
+} );

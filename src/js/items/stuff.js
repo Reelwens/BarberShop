@@ -2,6 +2,11 @@
 var button_emp = document.querySelector( '#btn_employee' ),
   button_sci = document.querySelector( '#btn_scissor' ),
   button_sho = document.querySelector( '#btn_shop' ),
+  button_com = document.querySelector( '#btn_com' ),
+  button_mus = document.querySelector( '#btn_music' ),
+  button_ren = document.querySelector( '#btn_renovation' ),
+  button_for = document.querySelector( '#btn_formation' ),
+  button_bon = document.querySelector( '#btn_bonus' ),
   inner = document.querySelector( '.content-gameplay' );
 
 /**
@@ -18,8 +23,6 @@ var addNewItem = function addNewItem( type ) {
       .innerHTML = game_items_data[ type ].nb;
     document.querySelector( '#price_' + type )
       .innerHTML = game_items_data[ type ].price;
-    document.querySelector( '#barber_money' )
-      .innerHTML = config.barber_money;
   }
 };
 
@@ -44,5 +47,34 @@ button_sci.addEventListener( 'click', function ( e ) {
 button_sho.addEventListener( 'click', function ( e ) {
   e.preventDefault();
   addNewItem( 'shop' );
+} );
+
+button_com.addEventListener( 'click', function ( e ) {
+  e.preventDefault();
+  addNewItem( 'com' );
+} );
+
+button_mus.addEventListener( 'click', function ( e ) {
+  e.preventDefault();
+  addNewItem( 'music' );
+  config.click_value *= 1.3;
+} );
+
+button_ren.addEventListener( 'click', function ( e ) {
+  e.preventDefault();
+  addNewItem( 'renovation' );
+  config.click_value *= 1.8;
+} );
+
+button_for.addEventListener( 'click', function ( e ) {
+  e.preventDefault();
+  addNewItem( 'formation' );
+  config.click_value *= 3;
+} );
+
+button_bon.addEventListener( 'click', function ( e ) {
+  e.preventDefault();
+  addNewItem( 'bonus' );
+  config.click_value *= 10;
 } );
 // END Button {{CLICK}} Event

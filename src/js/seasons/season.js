@@ -3,19 +3,19 @@ var game_date = moment( Date.now() )
   season_calendar = [ {
     begin: '2017-03-20',
     end: '2017-06-20',
-    path: './dist/img/printemps-background.svg'
+    path: 'dist/img/printemps-background.svg'
   }, {
     begin: '2017-06-20',
     end: '2017-11-22',
-    path: './dist/img/ete-background.svg'
+    path: 'dist/img/ete-background.svg'
   }, {
     begin: '2017-11-22',
     end: '2017-12-21',
-    path: './dist/img/automne-background.svg'
+    path: 'dist/img/automne-background.svg'
   }, {
     begin: '2017-12-21',
     end: '2018-03-20',
-    path: './dist/img/hiver-background.svg'
+    path: 'dist/img/hiver-background.svg'
   } ];
 
 setInterval( function () {
