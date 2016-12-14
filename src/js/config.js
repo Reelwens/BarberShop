@@ -2,7 +2,7 @@ var config = {
   click_value: 1,
   cut_value: 4,
   barber_money: 0,
-  interval_season_time: 10000
+  interval_season_time: 180000
 };
 
 // All game data
