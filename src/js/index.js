@@ -18,5 +18,5 @@ document.querySelector('.container-left').addEventListener( 'click', function ()
     document.querySelector('.shop-container').classList.add('clickListener');
     setTimeout(function(){
         document.querySelector('.shop-container').classList.remove('clickListener');
-    }, 300);
+    }, 150);
 });
