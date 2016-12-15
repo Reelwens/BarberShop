@@ -141,8 +141,8 @@ body{
 }
 
 .upgrade-container:hover{
-    background-color: #ffefe4;
-    cursor: pointer;
+  background-color: #ffefe4;
+  cursor: pointer;
 }
 
 .upgrade-container:active{
