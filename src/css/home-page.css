@@ -1,0 +1,164 @@
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Raleway', serif;
+  font-size: 14px;
+  background-image: url(../img/background-home-04.png);
+  background-size: contain;
+  margin: 0;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.buttonPseudo a {
+  text-decoration: none;
+  color: #477789;
+}
+
+.menu {
+  width: 30vw;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #bcd5e3;
+  opacity: 0.8;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(71, 119, 137, 1);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(71, 119, 137, 1);
+  box-shadow: 1px 1px 5px 0px rgba(71, 119, 137, 1);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.playGroup {
+  padding-top: 5%;
+}
+
+.txtPseudo {
+  color: #fdfdff;
+  font-size: 23px;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-family: "Diner-Fatt";
+  letter-spacing: 7px;
+}
+
+.inputPseudo {
+  text-align: center;
+}
+
+.inputPseudo input {
+  font-family: "Raleway";
+  letter-spacing: 3px;
+  text-align: center;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #575757;
+  height: 45px;
+  width: 300px;
+  border: 0px solid #aaaaaa;
+  box-shadow: inset 0px 0px 22px -8px rgba(0, 0, 0, 0.75);
+}
+
+.buttonPseudo {
+  text-align: center;
+}
+
+.buttonPseudo button {
+  font-family: "Diner-Fatt";
+  letter-spacing: 7px;
+  border: none;
+  box-shadow: 2px 2px 0px #477789;
+  color: #fdfdff;
+  font-size: 50px;
+  background: #477789;
+  margin-top: 20px;
+  padding: 13px 33px 7px 55px;
+  outline: none;
+  font-family: 'Sanchez', serif;
+  letter-spacing: 25px;
+  transition: all 0.9s ease-in-out;
+}
+
+.buttonPseudo button:hover {
+  background: #76C7E5;
+}
+
+.buttonPseudo button:active {
+  box-shadow: -1px -1px 0px #477789;
+}
+
+.background {
+  float: right;
+  width: 65vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background img.teddy {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  width: 27vw;
+}
+
+.background img.bulle {
+  position: fixed;
+  bottom: 30%;
+  right: 20%;
+  width: 40vw;
+  transform: rotate(5deg);
+  opacity: 0.8;
+}
+
+.main {
+  position: fixed;
+  top: 10%;
+  left: 42%;
+  transform: rotate(5deg);
+  width: 37vw;
+  height: 40vh;
+}
+
+.main #text {
+  font-size: 20px;
+  color: #575757;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1150px) {
+  .txtPseudo {
+    font-size: 24px;
+  }
+  .inputPseudo input {
+    height: 45px;
+    width: 250px;
+  }
+  .buttonPseudo button {
+    font-size: 50px;
+    padding: 5px 23px 3px 35px;
+    letter-spacing: 15px;
+  }
+  .classementGroup .buttonClassement {
+    font-size: 25px;
+    margin-top: 350px;
+    padding: 8px 29px 6px 40px;
+  }
+}
+
+
+/*
+Issues :
+- Cursor: pointer glitch
+- Responsive texte dans bulle
+- Image en bas sur grand écran (1980x1080);
+*/
