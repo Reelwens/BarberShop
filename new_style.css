@@ -131,11 +131,22 @@ body{
 .upgrade-container {
   width: 100%;
   padding: 0.5rem;
-  background-color: #fdede2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  margin-bottom: 15px;
+  background-color: #ffe9da;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 0px 0px rgb(188, 188, 188);
+}
+
+.upgrade-container:hover{
+    background-color: #ffefe4;
+    cursor: pointer;
+}
+
+.upgrade-container:active{
+    box-shadow: inset 1px 1px 0px 0px rgb(188, 188, 188);
 }
 
 .upgrade-container .text{
