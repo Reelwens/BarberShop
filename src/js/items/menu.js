@@ -1,6 +1,6 @@
 //Variables du panneau coulissant
 var $panel = document.querySelector( '.container-right' ),
-  $panel_btn = document.querySelector( '.counter' ),
+  $panel_btn = document.querySelector( '.left' ),
   $panel_el = document.querySelectorAll( '.upgrade-container' );
 
 $panel_btn.addEventListener( 'click', function () {
