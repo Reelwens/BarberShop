@@ -1,11 +1,11 @@
 body {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
 }
 
 
@@ -15,6 +15,7 @@ body {
   background: #FFF;
   font-family: "Sanchez", "Arial", sans-serif;
   color: #333;
+
 }
 
 .content-gameplay {
@@ -26,6 +27,7 @@ body {
   background-image: url('../dist/img/ete-background.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: url(../dist/img/scissors.png), pointer;
 }
 
 
@@ -43,7 +45,6 @@ body {
   align-items: center;
   text-align: center;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .counter {
@@ -292,6 +293,7 @@ body {
 ************************/
 
 @media screen and (min-width: 100px) and (max-width: 1100px) {
+
   .container-right {
     height: 100%;
     width: 0;

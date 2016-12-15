@@ -14,22 +14,13 @@
 
 <body>
 
-  <!-- <div class="navbar">
-  <ul>
-  <li><img src="src/img/logo-transparent.png"></li>
-  <li class="description-barber">The BARBER SHOP Game - Teddy Abernathy</li>
-  <li class="head-font"><a href="#footer">About</a></li>
-  <li class="head-font"><a href="#footer"><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
-  </ul>
-  </div> -->
-
   <div class="main">
     <div class="content-gameplay">
       <div class="container-left">
         <div class="points-container">
           <div class="counter">
             <h1 class="earnings" id="barber_money">0 $</h1>
-            <h2 class="second-title">Par seconde : 0</h2>
+            <h2 class="second-title">click : <span id="auto_click_value">0</span> /s</h2>
           </div>
         </div>
         <div class="content-barbershop">
@@ -104,8 +95,6 @@
               </div>
               <p><span id="nb_music">0</span></p>
             </div>
-
-            <img class="scroll" src="dist/img/sroll.png" alt="">
 
             <div class="upgrade-container" id="btn_renovation">
               <img src="./dist/img/brick.svg" alt="Brique" />
@@ -186,7 +175,7 @@
     <source src="src/sound/audio.mp3" type="audio/mp3" />
     <source src="src/sound/audio.ogg" type="audio/ogg" />
   </audio>
-  
+
   <div id="soundEffect"></div>
 
   <!-- SCRIPT -->

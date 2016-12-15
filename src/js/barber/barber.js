@@ -6,7 +6,7 @@ game_panel.addEventListener( 'click', function ( e ) {
   if ( queue[ 0 ] ) {
     if ( queue[ 0 ].click <= 0 ) {
       queue.shift();
-      config.barber_money += config.cut_value;
+      config.barber_money += config.random_gain( game_items_data.client.gain_min, game_items_data.client.gain_max );
       barber_money.innerHTML = config.barber_money + ' $';
 
       // Show customer after the cut
