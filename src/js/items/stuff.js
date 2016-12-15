@@ -60,30 +60,30 @@ button_sho.addEventListener( 'click', function ( e ) {
 
 button_com.addEventListener( 'click', function ( e ) {
   e.preventDefault();
-  addNewItem( 'com' );
+  addNewItem( 'com' ); // TODO: Shop = augmente taux de personnes/seconde
 } );
 
 button_mus.addEventListener( 'click', function ( e ) {
   e.preventDefault();
   addNewItem( 'music' );
-  config.click_value *= 1.3;
+  config.click_value *= 3;
 } );
 
 button_ren.addEventListener( 'click', function ( e ) {
   e.preventDefault();
   addNewItem( 'renovation' );
-  config.click_value *= 1.8;
+  config.click_value *= 8;
 } );
 
 button_for.addEventListener( 'click', function ( e ) {
   e.preventDefault();
   addNewItem( 'formation' );
-  config.click_value *= 3;
+  config.click_value *= 47;
 } );
 
 button_bon.addEventListener( 'click', function ( e ) {
   e.preventDefault();
   addNewItem( 'bonus' );
-  config.click_value *= 10;
+  config.click_value *= 260;
 } );
 // END Button {{CLICK}} Event
