@@ -60,7 +60,9 @@ button_sho.addEventListener( 'click', function ( e ) {
 
 button_com.addEventListener( 'click', function ( e ) {
   e.preventDefault();
-  addNewItem( 'com' ); // TODO: Shop = augmente taux de personnes/seconde
+  addNewItem( 'com' );
+  config.appearance_interval = config.appearance_interval / 2;
+  loop_game( 1 );
 } );
 
 button_mus.addEventListener( 'click', function ( e ) {

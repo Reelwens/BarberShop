@@ -5,7 +5,8 @@ var config = {
     return Math.floor( Math.random() * ( max - min + 1 ) + min );
   },
   barber_money: 0,
-  interval_season_time: 180000
+  interval_season_time: 180000,
+  appearance_interval: 2000
 };
 
 // All game data
