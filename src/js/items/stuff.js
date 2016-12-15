@@ -7,6 +7,7 @@ var button_emp = document.querySelector( '#btn_employee' ),
   button_ren = document.querySelector( '#btn_renovation' ),
   button_for = document.querySelector( '#btn_formation' ),
   button_bon = document.querySelector( '#btn_bonus' ),
+  auto_click_value = document.querySelector( '#auto_click_value' ),
   inner = document.querySelector( '.content-gameplay' );
 
 /**
@@ -23,18 +24,25 @@ var addNewItem = function addNewItem( type ) {
       .innerHTML = game_items_data[ type ].nb;
     document.querySelector( '.price_' + type )
       .innerHTML = game_items_data[ type ].price;
+    auto_click_value.innerHTML = Math.round( game_items_data[ 'employee' ].nb * config.click_value * 10 ) / 10;
   }
 };
 
 // Button {{CLICK}} Event
 button_emp.addEventListener( 'click', function ( e ) {
   e.preventDefault();
-  addNewItem( 'employee' );
-  setInterval( function () {
-    if ( inner ) {
-      inner.click();
-    }
-  }, 1000 / game_items_data[ 'employee' ].nb )
+
+  if ( game_items_data[ 'employee' ].nb < game_items_data[ 'shop' ].employee_nb && config.barber_money >= game_items_data[ 'employee' ].price ) {
+    button_emp.style.backgroundColor = '#fdede2';
+    addNewItem( 'employee' );
+    setInterval( function () {
+      if ( inner ) {
+        inner.click();
+      }
+    }, 1000 / game_items_data[ 'employee' ].nb )
+  } else if ( game_items_data[ 'employee' ].nb >= game_items_data[ 'shop' ].employee_nb && config.barber_money ) {
+    button_emp.style.backgroundColor = 'rgba( 0, 0, 0, 0.3 )';
+  }
 
 } );
 
@@ -47,6 +55,7 @@ button_sci.addEventListener( 'click', function ( e ) {
 button_sho.addEventListener( 'click', function ( e ) {
   e.preventDefault();
   addNewItem( 'shop' );
+  game_items_data[ 'shop' ].employee_nb += game_items_data[ 'shop' ].employee_nb;
 } );
 
 button_com.addEventListener( 'click', function ( e ) {

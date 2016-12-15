@@ -26,6 +26,7 @@ body {
   background-image: url('../dist/img/ete-background.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: url(../dist/img/scissors.png), pointer;
 }
 
 /* END CONTAINERS */

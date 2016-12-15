@@ -1,6 +1,9 @@
 var config = {
   click_value: 1,
   cut_value: 4,
+  random_gain: function ( min, max ) {
+    return Math.floor( Math.random() * ( max - min + 1 ) + min );
+  },
   barber_money: 0,
   interval_season_time: 180000
 };
@@ -24,6 +27,7 @@ var game_items_data = {
   shop: {
     price: 100,
     nb: 0,
+    employee_nb: 10,
     newPrice: function ( oldPrice ) {
       return Math.floor( oldPrice * 1.5 );
     }
@@ -63,4 +67,8 @@ var game_items_data = {
       return Math.floor( oldPrice * 1.5 );
     }
   },
+  client: {
+    gain_min: 1,
+    gain_max: 3
+  }
 };
