@@ -1,5 +1,4 @@
-var queue = []; <<
-<< << < HEAD
+var queue = []
 var loop_game = function ( season_multi ) {
   setInterval( function () {
     if ( queue.length < 11 ) {
