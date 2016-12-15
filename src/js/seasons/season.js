@@ -3,19 +3,23 @@ var game_date = moment( Date.now() )
   season_calendar = [ {
     begin: '2017-03-20',
     end: '2017-06-20',
-    path: 'dist/img/printemps-background.svg'
+    path: 'dist/img/printemps-background.svg',
+    multiplicator: 1
   }, {
     begin: '2017-06-20',
     end: '2017-11-22',
-    path: 'dist/img/ete-background.svg'
+    path: 'dist/img/ete-background.svg',
+    multiplicator: 1.3
   }, {
     begin: '2017-11-22',
     end: '2017-12-21',
-    path: 'dist/img/automne-background.svg'
+    path: 'dist/img/automne-background.svg',
+    multiplicator: 1
   }, {
     begin: '2017-12-21',
     end: '2018-03-20',
-    path: 'dist/img/hiver-background.svg'
+    path: 'dist/img/hiver-background.svg',
+    multiplicator: 0.7
   } ];
 
 setInterval( function () {
@@ -25,7 +29,7 @@ setInterval( function () {
       document.querySelector( '.content-gameplay' )
         .style.backgroundImage = 'url( ' + season_calendar[ i ].path + ' )';
 
-
+      loop_game( season_calendar[ i ].multiplicator );
       break;
     } else if ( game_date.isAfter( season_calendar[ i ].end, 'year' ) ) {
       season_calendar[ i ].begin = moment( season_calendar[ i ].begin )

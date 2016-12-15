@@ -56,11 +56,15 @@ button_sho.addEventListener( 'click', function ( e ) {
   e.preventDefault();
   addNewItem( 'shop' );
   game_items_data[ 'shop' ].employee_nb += game_items_data[ 'shop' ].employee_nb;
+  game_items_data[ 'client' ].min *= 15;
+  game_items_data[ 'client' ].max *= 15;
 } );
 
 button_com.addEventListener( 'click', function ( e ) {
   e.preventDefault();
-  addNewItem( 'com' ); // TODO: Shop = augmente taux de personnes/seconde
+  addNewItem( 'com' );
+  config.appearance_interval = config.appearance_interval / 2;
+  loop_game( 1 );
 } );
 
 button_mus.addEventListener( 'click', function ( e ) {
