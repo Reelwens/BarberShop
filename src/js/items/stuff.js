@@ -21,7 +21,7 @@ var addNewItem = function addNewItem( type ) {
 
     document.querySelector( '#nb_' + type )
       .innerHTML = game_items_data[ type ].nb;
-    document.querySelector( '#price_' + type )
+    document.querySelector( '.price_' + type )
       .innerHTML = game_items_data[ type ].price;
   }
 };
