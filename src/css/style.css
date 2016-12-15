@@ -97,6 +97,16 @@ body {
   flex-direction: row;
   align-items: flex-end;
 }
+.shop-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.click_gain {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 50px;
+}
 
 .barbershop {
   position: relative;
@@ -273,6 +283,11 @@ body {
 .money .money-icon {
   width: 1.5rem;
   margin-right: 1rem;
+}
+
+.money-icon-gain {
+  height: 2rem;
+  margin-left: 0.5rem;
 }
 
 .price {

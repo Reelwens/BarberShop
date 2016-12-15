@@ -48,46 +48,58 @@ button_emp.addEventListener( 'click', function ( e ) {
 
 button_sci.addEventListener( 'click', function ( e ) {
   e.preventDefault();
-  addNewItem( 'scissor' );
-  config.click_value *= 1.1;
+  if ( config.barber_money >= game_items_data[ 'scissor' ].price ) {
+    addNewItem( 'scissor' );
+    config.click_value *= 1.1;
+  }
 } );
 
 button_sho.addEventListener( 'click', function ( e ) {
   e.preventDefault();
-  addNewItem( 'shop' );
-  game_items_data[ 'shop' ].employee_nb += game_items_data[ 'shop' ].employee_nb;
-  game_items_data[ 'client' ].gain_min *= 15;
-  game_items_data[ 'client' ].gain_max *= 15;
+  if ( config.barber_money >= game_items_data[ 'shop' ].price ) {
+    addNewItem( 'shop' );
+    game_items_data[ 'shop' ].employee_nb += game_items_data[ 'shop' ].employee_nb;
+    game_items_data[ 'client' ].gain_min *= 15;
+    game_items_data[ 'client' ].gain_max *= 15;
+  }
 } );
 
 button_com.addEventListener( 'click', function ( e ) {
   e.preventDefault();
-  addNewItem( 'com' );
-  config.appearance_interval = config.appearance_interval / 2;
-  loop_game( 1 );
+  if ( config.barber_money >= game_items_data[ 'com' ].price ) {
+    addNewItem( 'com' );
+    config.appearance_interval = config.appearance_interval / 2;
+    loop_game( 1 );
+  }
 } );
 
 button_mus.addEventListener( 'click', function ( e ) {
   e.preventDefault();
-  addNewItem( 'music' );
-  config.click_value *= 3;
+  if ( config.barber_money >= game_items_data[ 'music' ].price ) {
+    addNewItem( 'music' );
+    config.click_value *= 2;
+  }
 } );
 
 button_ren.addEventListener( 'click', function ( e ) {
   e.preventDefault();
   addNewItem( 'renovation' );
-  config.click_value *= 8;
+  config.click_value *= 5;
 } );
 
 button_for.addEventListener( 'click', function ( e ) {
   e.preventDefault();
-  addNewItem( 'formation' );
-  config.click_value *= 47;
+  if ( config.barber_money >= game_items_data[ 'formation' ].price ) {
+    addNewItem( 'formation' );
+    config.click_value *= 10;
+  }
 } );
 
 button_bon.addEventListener( 'click', function ( e ) {
   e.preventDefault();
-  addNewItem( 'bonus' );
-  config.click_value *= 260;
+  if ( config.barber_money >= game_items_data[ 'bonus' ].price ) {
+    addNewItem( 'bonus' );
+    config.click_value *= 20;
+  }
 } );
 // END Button {{CLICK}} Event
