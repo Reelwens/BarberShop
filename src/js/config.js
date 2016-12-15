@@ -8,59 +8,59 @@ var config = {
 // All game data
 var game_items_data = {
   employee: {
-    price: 3,
+    price: 15,
     nb: 0,
     newPrice: function ( oldPrice ) {
       return Math.floor( oldPrice * 1.5 );
     }
   },
   scissor: {
-    price: 5,
+    price: 12,
     nb: 0,
     newPrice: function ( oldPrice ) {
       return Math.floor( oldPrice * 1.3 );
     }
   },
   shop: {
-    price: 100,
+    price: 1000,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 1.5 );
+      return Math.floor( oldPrice * 10 );
     }
   },
   com: {
-    price: 10,
+    price: 50,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 1.5 );
+      return Math.floor( oldPrice * 1.3 );
     }
   },
   music: {
-    price: 10,
+    price: 100,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 1.5 );
+      return Math.floor( oldPrice * 1.3 );
     }
   },
   renovation: {
-    price: 10,
+    price: 1100,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 1.5 );
+      return Math.floor( oldPrice * 1.3 );
     }
   },
   formation: {
-    price: 10,
+    price: 10100,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 1.5 );
+      return Math.floor( oldPrice * 1.3 );
     }
   },
   bonus: {
-    price: 10,
+    price: 110000,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 1.5 );
+      return Math.floor( oldPrice * 1.3 );
     }
   },
 };
