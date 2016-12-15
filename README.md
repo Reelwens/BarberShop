@@ -35,8 +35,8 @@ La boutique permet au joueur de progresser, car elle lui permet de d'**acheter d
 | Niveau        | Prix          | Employés max.  | Clic par client | Gain par client |
 | ------------- |:-------------:|:--------------:|:---------------:| ---------------:|
 | Niveau 1      | (défaut)      | 10             | 10 à 30         | $1 à $3         |
-| Niveau 2      | $1000         | 100            | 130 à 360       | $15 à $45       |
-| Niveau X      | x10           | x10            | x13             | x15             |
+| Niveau 2      | $1000         | 20             | 130 à 360       | $15 à $45       |
+| Niveau X      | x10           | +10            | x13             | x15             |
 
 **Employés**
 
@@ -71,8 +71,8 @@ Lorsque le joueur va **augmenter le niveau de sa boutique**, le prix de la coupe
 | Type de communication   | Personnes par seconde | Prix                     | Niveau correspondant |
 | ----------------------- |:---------------------:| ------------------------ |:-------------------- |
 | Rien (défaut)           | 0.5                   | $0                       | Niveau 1             |
-| Article de journal      | 1                     | $50                      | Niveau 1             |
-| Affiche publicitaire    | A voir                | ?                        | Niveau 1             |
+| Article de journal      | 1                     | $120                     | Niveau 1             |
+| Affiche publicitaire    | A voir (x2 ?)         | (x3 ?)                   | Niveau 1             |
 
 ### Saisons
 
