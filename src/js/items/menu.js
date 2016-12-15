@@ -18,8 +18,9 @@ $panel_btn.addEventListener( 'click', function () {
       }
     } else {
       $panel.classList.add( 'open' );
-      $panel.style.width = '15rem';
-      $panel.style.minWidth = '15rem';
+      $panel.style.width = '17rem';
+      $panel.style.minWidth = '17rem';
+        $panel.style.height = '97.5%';
       for ( var i = 0; i < $panel_el.length; i++ ) {
         $panel_el[ i ].style.height = '5rem';
         $panel_el[ i ].style.padding = '0.5rem';
