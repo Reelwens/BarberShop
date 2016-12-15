@@ -56,8 +56,8 @@ button_sho.addEventListener( 'click', function ( e ) {
   e.preventDefault();
   addNewItem( 'shop' );
   game_items_data[ 'shop' ].employee_nb += game_items_data[ 'shop' ].employee_nb;
-  game_items_data[ 'client' ].min *= 15;
-  game_items_data[ 'client' ].max *= 15;
+  game_items_data[ 'client' ].gain_min *= 15;
+  game_items_data[ 'client' ].gain_max *= 15;
 } );
 
 button_com.addEventListener( 'click', function ( e ) {
