@@ -12,11 +12,11 @@ document.querySelector('#sound').volume=0.15;
 
 // Animation for the shop when clic
 document.querySelector('.container-left').addEventListener( 'click', function () {
-    if (document.querySelector('.shop-container').classList.contains('clickListener')) 
+    if (document.querySelector('.barber').classList.contains('clickListener')) 
     return; // Protection for the clic while animation
     
-    document.querySelector('.shop-container').classList.add('clickListener');
+    document.querySelector('.barber').classList.add('clickListener');
     setTimeout(function(){
-        document.querySelector('.shop-container').classList.remove('clickListener');
-    }, 150);
+        document.querySelector('.barber').classList.remove('clickListener');
+    }, 1000);
 });
