@@ -27,7 +27,6 @@ body {
   background-image: url('../dist/img/ete-background.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  cursor: url(../dist/img/scissors.png), pointer;
 }
 
 
@@ -45,6 +44,7 @@ body {
   align-items: center;
   text-align: center;
   overflow: hidden;
+  cursor: url(../dist/img/scissors.png), pointer;
 }
 
 .counter {
@@ -57,6 +57,7 @@ body {
   color: #fff;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  cursor: default;
 }
 
 .points-container {
