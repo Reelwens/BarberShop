@@ -41,7 +41,7 @@ body {
   align-items: center;
   text-align: center;
   overflow: hidden;
-
+  cursor: pointer;
 }
 
 .counter {
@@ -107,6 +107,19 @@ body {
 
 .shop {
   height: 20.3rem;
+}
+
+.clickListener{
+  animation: loremAnimation ease-in-out 0.3s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+
+@keyframes loremAnimation{
+  0% {transform:   skewX(0deg);}
+  35% {transform:  skewX(-10deg);}
+  72% {transform:  skewX(6deg);}
+  100% {transform: skewX(0deg);}
 }
 
 /* END CONTAINER LEFT */
