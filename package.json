@@ -4,7 +4,7 @@
   "description": "projet semaine intensive hetic H2",
   "main": "index.js",
   "scripts": {
-    "build": "gulp css && gulp compress:img && gulp javascript && gulp compress:js && gulp minify-css"
+    "build": "gulp css && gulp compress:img && gulp javascript && gulp javascript:home && gulp compress:js && gulp minify-css"
   },
   "repository": {
     "type": "git",

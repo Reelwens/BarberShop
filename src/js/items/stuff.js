@@ -83,8 +83,10 @@ button_mus.addEventListener( 'click', function ( e ) {
 
 button_ren.addEventListener( 'click', function ( e ) {
   e.preventDefault();
-  addNewItem( 'renovation' );
-  config.click_value *= 5;
+  if ( config.barber_money >= game_items_data[ 'renovation' ].price ) {
+    addNewItem( 'renovation' );
+    config.click_value *= 5;
+  }
 } );
 
 button_for.addEventListener( 'click', function ( e ) {
