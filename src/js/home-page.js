@@ -1,6 +1,6 @@
 /* Display the text letter per letter in a element */
 var TextToReplace = document.getElementById("text");
-var AnimatedText = "Bonjour, je suis Teddy Abernathy. Depuis ma plus tendre enfance, je ne rêve que d’une chose : Devenir le plus grand barbier du monde. \n \n J'économise depuis des années pour lancer ma première boutique. Aujourd’hui est un grand jour car son ouverture est imminente. Les clients sont nombreux à attendre j'ai hâte de débuter ma nouvelle vie. \n \n Prenez vos ciseaux et aidez-moi à prospérer dans le milieu de la barberie. Engagez des employés, améliorez leur productivité, et gagnez en prestige. À vous de jouer !";
+var AnimatedText = "Bonjour, je suis Teddy Abernathy. Depuis ma plus tendre enfance, je ne rêve que d’une chose : Devenir le plus grand barbier du monde. \n \n J'économise depuis des années pour lancer ma première boutique. Aujourd’hui est un grand jour car son ouverture est imminente. \n \n Prenez vos ciseaux et aidez-moi à prospérer dans le milieu de la barberie. Engagez des employés, améliorez leur productivité, et gagnez en prestige. À vous de jouer !";
 var i = 0;
 
 var addLetter = function addLetter() {
