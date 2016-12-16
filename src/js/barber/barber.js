@@ -17,13 +17,7 @@ game_panel.addEventListener( 'click', function ( e ) {
       document.querySelector( '.customers-exit' )
         .innerHTML = customer_svg[ random_customers( 1, 7 ) ];
 
-      for ( var i = 0; i < document.querySelectorAll( '#veuch' )
-        .length; i++ ) {
-        document.querySelectorAll( '#veuch' )[ i ]
-          .style.fill = queue[ 0 ].furColor;
-      }
       queue.shift();
-      console.log( document.querySelectorAll( '#veuch' ) );
 
       document.querySelector( '.click_gain' )
         .innerHTML = '+ ' + gain + '<img src="./dist/img/money.svg" alt="money icon" class="money-icon-gain"/>';
