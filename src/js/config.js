@@ -19,7 +19,7 @@ var game_items_data = {
     }
   },
   scissor: {
-    price: 12,
+    price: 5,
     nb: 0,
     newPrice: function ( oldPrice ) {
       return Math.floor( oldPrice * 1.3 );
