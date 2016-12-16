@@ -28,7 +28,6 @@ body {
   background-size: cover;
 }
 
-
 /* END CONTAINERS */
 
 
@@ -127,8 +126,9 @@ body {
 }
 
 .customers-exit {
-  width: 9.2rem;
-  min-width: 9.2rem;
+  width: 3.7rem;
+  min-width: 3.7rem;
+  margin-left: 1rem;
 }
 
 .customer {

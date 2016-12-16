@@ -12,6 +12,13 @@ gulp.task( 'javascript', function () {
     .pipe( sourcemaps.init() )
     .pipe( concat( 'js/src.js' ) )
     .pipe( sourcemaps.write() )
+    .pipe( gulp.dest( 'dist' ) )
+} );
+gulp.task( 'javascript:home', function () {
+  return gulp.src( './src/js/home-page.js' )
+    .pipe( sourcemaps.init() )
+    .pipe( concat( 'js/home-page.js' ) )
+    .pipe( sourcemaps.write() )
     .pipe( gulp.dest( 'dist' ) );
 } );
 
