@@ -31,16 +31,20 @@ document.querySelector( '.container-left' )
 
 // Gestion mute
 var mute = false,
-  muteButton = document.querySelector( '.counter' );
+  muteButton = document.querySelector( '.right' );
 
 muteButton.addEventListener( 'click', function () {
   if ( mute === false ) {
     document.querySelector( '#sound' )
       .volume = 0;
+    document.querySelector( '.play' )
+      .innerHTML = '<img src="./dist/img/musical-note-striped.svg" alt="Allumer le son" />';
     mute = true;
   } else {
     document.querySelector( '#sound' )
       .volume = 0.15;
+    document.querySelector( '.play' )
+      .innerHTML = '<img src="./dist/img/musical-note.svg" alt="Couper le son" />';
     mute = false;
   }
 } );

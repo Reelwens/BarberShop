@@ -64,6 +64,7 @@ body {
 .middle,
 .right {
   width: 30%;
+  cursor: pointer;
 }
 
 .left img {
