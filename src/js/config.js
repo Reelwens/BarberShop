@@ -12,29 +12,29 @@ var config = {
 // All game data
 var game_items_data = {
   employee: {
-    price: 30,
+    price: 15,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 1.5 );
+      return Math.floor( oldPrice * 2 );
     }
   },
   scissor: {
-    price: 40,
+    price: 12,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 1.5 );
+      return Math.floor( oldPrice * 1.3 );
     }
   },
   shop: {
-    price: 10000,
+    price: 5000,
     nb: 0,
     employee_nb: 10,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * oldPrice * 10 );
+      return Math.floor( oldPrice * 10 );
     }
   },
   com: {
-    price: 500,
+    price: 120,
     nb: 0,
     newPrice: function ( oldPrice ) {
       return Math.floor( oldPrice * 2 );
@@ -44,28 +44,28 @@ var game_items_data = {
     price: 100,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 1.6 );
+      return Math.floor( oldPrice * 1.3 );
     }
   },
   renovation: {
     price: 1100,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 2 );
+      return Math.floor( oldPrice * 1.3 );
     }
   },
   formation: {
     price: 10100,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 5 );
+      return Math.floor( oldPrice * 1.3 );
     }
   },
   bonus: {
     price: 110000,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 7 );
+      return Math.floor( oldPrice * 1.3 );
     }
   },
   client: {
