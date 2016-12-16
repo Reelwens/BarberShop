@@ -35,7 +35,7 @@ La boutique permet au joueur de progresser, car elle lui permet de d'**acheter d
 | Niveau        | Prix          | Employés max.  | Clic par client | Gain par client |
 | ------------- |:-------------:|:--------------:|:---------------:| ---------------:|
 | Niveau 1      | (défaut)      | 10             | 10 à 30         | $1 à $3         |
-| Niveau 2      | $1000         | 20             | 130 à 360       | $15 à $45       |
+| Niveau 2      | $5000         | 20             | 130 à 360       | $15 à $45       |
 | Niveau X      | x10           | +10            | x13             | x15             |
 
 **Employés**
@@ -45,8 +45,8 @@ Les employés sont les achats **les plus rentables**. Chaque employé va réalis
 | Nombre | Prix |
 | ------ | ----:|
 | 1      | $15  |
-| 2      | $23  |
-| 3      | x1,5 |
+| 2      | $30  |
+| 3      | x2   |
 
 **Amélioration de la production**
 
@@ -72,7 +72,7 @@ Lorsque le joueur va **augmenter le niveau de sa boutique**, le prix de la coupe
 | ----------------------- |:---------------------:| ------------------------ |:-------------------- |
 | Rien (défaut)           | 0.5                   | $0                       | Niveau 1             |
 | Article de journal      | 1                     | $120                     | Niveau 1             |
-| Affiche publicitaire    | A voir (x2 ?)         | (x3 ?)                   | Niveau 1             |
+| Affiche publicitaire    | x2                    | x2                       | Niveau 1             |
 
 ### Saisons
 
