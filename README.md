@@ -1,5 +1,5 @@
 # Barber Shop
-Projet web réalisé dans le cadre de HETIC.
+Projet web réalisé dans le cadre de HETIC en **4 jours**.
 
 ## Sujet demandé
 Nous avons pour sujet de réaliser un **click game**.
