@@ -30,14 +30,14 @@ var game_items_data = {
     nb: 0,
     employee_nb: 10,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 10 );
+      return Math.floor( oldPrice * 42 ); // 42 until the increase per click for each client is dev
     }
   },
   com: {
     price: 120,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 2 );
+      return Math.floor( oldPrice * 2.5 );
     }
   },
   music: {

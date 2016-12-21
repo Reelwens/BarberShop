@@ -1,5 +1,5 @@
 # Barber Shop
-Projet web réalisé dans le cadre de HETIC.
+Projet web réalisé dans le cadre de HETIC en 4 jours.
 
 ## Sujet demandé
 Nous avons pour sujet de réaliser un **click game**.
@@ -36,7 +36,7 @@ La boutique permet au joueur de progresser, car elle lui permet de d'**acheter d
 | ------------- |:-------------:|:--------------:|:---------------:| ---------------:|
 | Niveau 1      | (défaut)      | 10             | 10 à 30         | $1 à $3         |
 | Niveau 2      | $5000         | 20             | 130 à 360       | $15 à $45       |
-| Niveau X      | x10           | +10            | x13             | x15             |
+| Niveau X      | x42           | +10            | x13             | x15             |
 
 **Employés**
 
@@ -72,7 +72,7 @@ Lorsque le joueur va **augmenter le niveau de sa boutique**, le prix de la coupe
 | ----------------------- |:---------------------:| ------------------------ |:-------------------- |
 | Rien (défaut)           | 0.5                   | $0                       | Niveau 1             |
 | Article de journal      | 1                     | $120                     | Niveau 1             |
-| Affiche publicitaire    | x2                    | x2                       | Niveau 1             |
+| Affiche publicitaire    | x2                    | x2,5                     | Niveau 1             |
 
 ### Saisons
 

@@ -2,7 +2,7 @@
 document.querySelector( '#sound' )
   .volume = 0.15;
 
-// Animation for the shop when clic
+// Animation for the barber when clic
 document.querySelector( '.container-left' )
   .addEventListener( 'click', function () {
     if ( document.querySelector( '.barber' )
@@ -15,6 +15,21 @@ document.querySelector( '.container-left' )
       document.querySelector( '.barber' )
         .classList.remove( 'clickListener' );
     }, 1000 );
+  } );
+
+// Animation for the shop when clic
+document.querySelector( '.container-left' )
+  .addEventListener( 'click', function () {
+    if ( document.querySelector( '.shop-container' )
+      .classList.contains( 'clickListenerShop' ) )
+      return; // Protection for the clic while animation
+
+    document.querySelector( '.shop-container' )
+      .classList.add( 'clickListenerShop' );
+    setTimeout( function () {
+      document.querySelector( '.shop-container' )
+        .classList.remove( 'clickListenerShop' );
+    }, 300 );
   } );
 
 // Gestion bruitages
