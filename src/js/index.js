@@ -51,3 +51,8 @@ function number_shorter(val) {
     }
     return (val < 1000 ? val : short.toFixed(1) + " ") + config.formatter[base];
 }
+
+// Dyn title
+setInterval( function () {
+      document.querySelector('title').innerHTML = number_shorter(config.barber_money) + " $ - Barber Shop"
+}, 1000 );
