@@ -23,8 +23,8 @@ var addNewItem = function addNewItem( type ) {
     document.querySelector( '#nb_' + type )
       .innerHTML = game_items_data[ type ].nb;
     document.querySelector( '.price_' + type )
-      .innerHTML = game_items_data[ type ].price;
-    auto_click_value.innerHTML = Math.round( game_items_data[ 'employee' ].nb * config.click_value * 10 ) / 10;
+      .innerHTML = number_shorter(game_items_data[ type ].price);
+    auto_click_value.innerHTML = number_shorter(Math.round( game_items_data[ 'employee' ].nb * config.click_value * 10 ) / 10);
   }
 };
 

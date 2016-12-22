@@ -12,45 +12,10 @@ game_panel.addEventListener( 'click', function ( e ) {
 
 
       config.barber_money += gain;
-      var display_number = config.barber_money
       
-      if (config.barber_money > 1000) {
-        display_number = Math.floor(config.barber_money / 10)/100 + " K"
-      }
-      if (config.barber_money > 10000) {
-        display_number = Math.floor(config.barber_money / 100)/10 + " K"
-      }
-      if (config.barber_money > 100000) {
-        display_number = Math.floor(config.barber_money / 1000) + " K"
-      }
-      if (config.barber_money > 1000000) {
-        display_number = Math.floor(config.barber_money / 10000)/100 + " M"
-      }
-      if (config.barber_money > 10000000) {
-        display_number = Math.floor(config.barber_money / 100000)/10 + " M"
-      }
-      if (config.barber_money > 100000000) {
-        display_number = Math.floor(config.barber_money / 1000000) + " M"
-      }
-      if (config.barber_money > 1000000000) {
-        display_number = Math.floor(config.barber_money / 10000000)/100 + " B"
-      }
-      if (config.barber_money > 10000000000) {
-        display_number = Math.floor(config.barber_money / 100000000)/10 + " B"
-      }
-      if (config.barber_money > 100000000000) {
-        display_number = Math.floor(config.barber_money / 1000000000) + " B"
-      }
-      if (config.barber_money > 1000000000000) {
-        display_number = Math.floor(config.barber_money / 10000000000)/100 + " T"
-      }
-      if (config.barber_money > 10000000000000) {
-        display_number = Math.floor(config.barber_money / 100000000000)/10 + " T"
-      }
-      if (config.barber_money > 100000000000000) {
-        display_number = Math.floor(config.barber_money / 1000000000000) + " T"
-      }
-      barber_money.innerHTML = display_number;
+      var display_money = number_shorter(config.barber_money);
+      
+      barber_money.innerHTML = display_money;
       // Show customer after the cut
       document.querySelector( '.customers-exit' )
         .innerHTML = customer_svg[ random_customers( 1, 7 ) ];
@@ -58,11 +23,7 @@ game_panel.addEventListener( 'click', function ( e ) {
       queue.shift();
 
       document.querySelector( '.click_gain' )
-        .innerHTML = '+ ' + gain + '<img src="./dist/img/money.svg" alt="money icon" class="money-icon-gain"/>';
-
-
-      document.querySelector( '.click_gain' )
-        .innerHTML = '+ ' + gain + '<img src="./dist/img/money.svg" alt="money icon" class="money-icon-gain"/>';
+        .innerHTML = '+ ' + number_shorter(gain) + '<img src="./dist/img/money.svg" alt="money icon" class="money-icon-gain"/>';
 
 
       // Remove customer after the cut
