@@ -34,10 +34,10 @@ var game_items_data = {
     }
   },
   com: {
-    price: 120,
+    price: 80,
     nb: 0,
     newPrice: function ( oldPrice ) {
-      return Math.floor( oldPrice * 2.5 );
+      return Math.floor( oldPrice * 2.1 );
     }
   },
   music: {

@@ -59,10 +59,18 @@ body {
   align-items: center;
 }
 
-.left,
-.middle,
+.left {
+  width: 25%;
+  cursor: pointer;
+  padding-left: 5%;
+}
+.middle {
+  width: 50%;
+  cursor: pointer;
+}
+
 .right {
-  width: 30%;
+  width: 25%;
   cursor: pointer;
 }
 
